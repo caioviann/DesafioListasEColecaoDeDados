@@ -1,4 +1,4 @@
-package henrique.caio.compras.principal;
+package henrique.caio.compras.cartao;
 
 import henrique.caio.compras.cartao.CartaoDeCredito;
 
@@ -11,7 +11,7 @@ public class Principal {
         Scanner leitura = new Scanner(System.in);
         System.out.println("Digite o limite do cartão: ");
         double limite = leitura.nextDouble();
-        CartaoDeCredito cartao = new CartaoDeCredito(limite);
+        CartaoDeCredito cartao = new CartaoDeCredito((int) limite);
 
         int sair = 1;
         while(sair != 0) {
